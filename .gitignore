@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+# personal state never belongs in this public repo
+state/
+config.json
+.repo-hunter/

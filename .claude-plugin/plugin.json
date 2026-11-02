@@ -1,0 +1,11 @@
+{
+  "name": "repo-hunter",
+  "version": "0.1.0",
+  "description": "Daily GitHub scout: repos gaining 200+ stars/day that boost product, design and dev teams — deduped against what you already starred/forked/integrated, compared with existing alternatives, logged to Notion.",
+  "author": {
+    "name": "Kiet Le"
+  },
+  "repository": "https://github.com/kietlecocodev/repo-hunter",
+  "license": "MIT",
+  "keywords": ["github", "trending", "discovery", "productivity", "product-management", "notion", "daily"]
+}

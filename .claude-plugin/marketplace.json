@@ -1,0 +1,19 @@
+{
+  "name": "repo-hunter",
+  "owner": {
+    "name": "Kiet Le"
+  },
+  "metadata": {
+    "description": "Daily GitHub repo scout for product, design and dev teams",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "repo-hunter",
+      "source": "./",
+      "description": "Finds GitHub repos gaining 200+ stars in a day (Trending + Search API + star snapshots), prioritises tools for product teams, skips repos you already use or saw recently, compares each with existing alternatives (strengths, weaknesses, 5 reasons for/against) and logs every daily run to Notion.",
+      "category": "productivity",
+      "tags": ["github", "trending", "discovery", "product", "design", "devtools", "notion"]
+    }
+  ]
+}
