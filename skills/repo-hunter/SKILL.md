@@ -86,6 +86,12 @@ Spawn **one** subagent (general-purpose) with this brief:
 > 3. Return JSON: `{"used": {"owner/name": ["reason", ...]}, "clear": [...], "notes": [...]}`.
 > Do not guess: only mark used when you saw the evidence; quote it.
 
+**Local check (only when running on the user's machine, not in a cloud routine):** GitHub can't see
+tools installed locally. Also check, for each still-clear repo and its package/skill names:
+`ls ~/.claude/skills ~/.agents/skills`, `claude plugin list`, `~/.claude/plugins/cache/*`, and the
+skills/plugins listed in this session (e.g. `anthropic-skills:*` = content of `anthropics/skills`).
+A match counts as used (evidence: "installed locally: <name>").
+
 Drop every repo in `used` from the shortlist. Backfill from the next-best scored candidates (run the
 agent again on the backfill only) so you still have up to `max_picks`. Log both.
 
